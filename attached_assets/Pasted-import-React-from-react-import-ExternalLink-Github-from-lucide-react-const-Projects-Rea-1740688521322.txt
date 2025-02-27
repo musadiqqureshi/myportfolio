@@ -1,0 +1,172 @@
+import React from 'react';
+import { ExternalLink, Github } from 'lucide-react';
+
+const Projects: React.FC = () => {
+  const personalProjects = [
+    {
+      title: "Cinema Booking System",
+      description: "Developed a Cinema Booking System featuring intuitive booking interfaces, ensuring a seamless reservation process for users.",
+      tags: ["Python", "Database", "UI/UX"],
+      image: "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+    },
+    {
+      title: "Hospital Management System",
+      description: "Developed Hospital Management System featuring doctor appointments, engaging user interface, and patient management.",
+      tags: ["Python", "Database", "Healthcare"],
+      image: "https://images.unsplash.com/photo-1516549655169-df83a0774514?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+    },
+    {
+      title: "Air Ticketing System",
+      description: "Developed Air ticketing system featuring customer handling and ticket booking management.",
+      tags: ["Python", "Database", "Booking System"],
+      image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1174&q=80"
+    },
+    {
+      title: "Database Management System",
+      description: "Engineered a comprehensive Database Management System (DBMS) to efficiently organize, retrieve, and manipulate data.",
+      tags: ["Database", "SQL", "Data Management"],
+      image: "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1036&q=80"
+    },
+    {
+      title: "AI Fraud Detection System",
+      description: "Developed an advanced AI Fraud Detection System to protect businesses from fraudulent activities with exceptional accuracy and efficiency.",
+      tags: ["AI", "Machine Learning", "Security"],
+      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+    },
+    {
+      title: "Restaurant Management System",
+      description: "Created a comprehensive Restaurant Management System aimed at streamlining operations and improving customer experiences in the food service industry.",
+      tags: ["Python", "Database", "UI/UX"],
+      image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+    }
+  ];
+
+  const trendingProjects = [
+    {
+      title: "AI Code Assistant",
+      description: "An advanced AI-powered code assistant that helps developers write better code faster with intelligent suggestions and automated refactoring.",
+      tags: ["AI", "Machine Learning", "Developer Tools"],
+      image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+    },
+    {
+      title: "Blockchain Voting Platform",
+      description: "A secure and transparent voting platform built on blockchain technology, ensuring tamper-proof elections and verifiable results.",
+      tags: ["Blockchain", "Security", "Web3"],
+      image: "https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+    },
+    {
+      title: "Real-time Collaboration Tool",
+      description: "A next-generation collaboration platform that enables teams to work together seamlessly in real-time, regardless of location.",
+      tags: ["WebSockets", "React", "Collaboration"],
+      image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+    },
+    {
+      title: "Sustainable Energy Monitor",
+      description: "An IoT-based system for monitoring and optimizing energy usage in homes and businesses, promoting sustainability and cost savings.",
+      tags: ["IoT", "Data Analytics", "Sustainability"],
+      image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+    }
+  ];
+
+  return (
+    <section id="projects" className="py-20 bg-gray-900">
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl font-bold text-center mb-4 text-white">My Projects</h2>
+        <p className="text-center text-gray-400 mb-12 max-w-3xl mx-auto">
+          Here are some of the projects I've worked on. Each project demonstrates my skills in different areas of software development.
+        </p>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          {personalProjects.map((project, index) => (
+            <div key={index} className="bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow border border-gray-700">
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src={project.image} 
+                  alt={project.title} 
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-2 text-white">{project.title}</h3>
+                <p className="text-gray-400 mb-4">{project.description}</p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {project.tags.map((tag, tagIndex) => (
+                    <span 
+                      key={tagIndex} 
+                      className="bg-gray-700 text-teal-400 px-2 py-1 rounded-full text-xs font-medium"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+                <div className="flex justify-between">
+                  <a 
+                    href="#" 
+                    className="text-teal-500 hover:text-teal-400 flex items-center text-sm font-medium"
+                  >
+                    <ExternalLink size={16} className="mr-1" /> View Project
+                  </a>
+                  <a 
+                    href="#" 
+                    className="text-teal-500 hover:text-teal-400 flex items-center text-sm font-medium"
+                  >
+                    <Github size={16} className="mr-1" /> Source Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        
+        <h2 className="text-3xl font-bold text-center mb-4 text-white">Trending Projects</h2>
+        <p className="text-center text-gray-400 mb-12 max-w-3xl mx-auto">
+          I'm also working on some cutting-edge projects that align with current technology trends.
+        </p>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {trendingProjects.map((project, index) => (
+            <div key={index} className="bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow flex flex-col md:flex-row border border-gray-700">
+              <div className="md:w-2/5 h-48 md:h-auto overflow-hidden">
+                <img 
+                  src={project.image} 
+                  alt={project.title} 
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                />
+              </div>
+              <div className="md:w-3/5 p-6">
+                <h3 className="text-xl font-bold mb-2 text-white">{project.title}</h3>
+                <p className="text-gray-400 mb-4">{project.description}</p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {project.tags.map((tag, tagIndex) => (
+                    <span 
+                      key={tagIndex} 
+                      className="bg-gray-700 text-teal-400 px-2 py-1 rounded-full text-xs font-medium"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+                <div className="flex justify-between mt-auto">
+                  <a 
+                    href="#" 
+                    className="text-teal-500 hover:text-teal-400 flex items-center text-sm font-medium"
+                  >
+                    <ExternalLink size={16} className="mr-1" /> View Project
+                  </a>
+                  <a 
+                    href="#" 
+                    className="text-teal-500 hover:text-teal-400 flex items-center text-sm font-medium"
+                  >
+                    <Github size={16} className="mr-1" /> Source Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Projects;
