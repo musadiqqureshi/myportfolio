@@ -6,27 +6,32 @@ const personalProjects = [
   {
     title: "Cinema Booking System",
     description: "Developed a comprehensive booking system with intuitive interfaces for seamless movie ticket reservations.",
-    technologies: ["Python", "Database Design", "UI/UX"]
+    technologies: ["Python", "Database Design", "UI/UX"],
+    image: "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=800&q=80"
   },
   {
     title: "Hospital Management System",
     description: "Built a robust healthcare management system featuring doctor appointments and patient management capabilities.",
-    technologies: ["Python", "Database Management", "Web Development"]
+    technologies: ["Python", "Database Management", "Web Development"],
+    image: "https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&w=800&q=80"
   },
   {
     title: "Air Ticketing System",
     description: "Created an efficient airline booking platform with customer handling and ticket management features.",
-    technologies: ["Python", "Database Design", "User Interface"]
+    technologies: ["Python", "Database Design", "User Interface"],
+    image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80"
   },
   {
     title: "AI Fraud Detection System",
     description: "Developed an advanced system using AI to protect businesses from fraudulent activities with high accuracy.",
-    technologies: ["Python", "Machine Learning", "Data Analysis"]
+    technologies: ["Python", "Machine Learning", "Data Analysis"],
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80"
   },
   {
     title: "Restaurant Management System",
     description: "Engineered a comprehensive solution for streamlining restaurant operations and enhancing customer experience.",
-    technologies: ["Python", "Database Management", "UI Development"]
+    technologies: ["Python", "Database Management", "UI Development"],
+    image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80"
   }
 ];
 
@@ -64,7 +69,14 @@ const Projects = () => {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
               >
-                <Card className="h-full">
+                <Card className="h-full overflow-hidden group">
+                  <div className="relative h-48 overflow-hidden">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                    />
+                  </div>
                   <CardHeader>
                     <CardTitle>{project.title}</CardTitle>
                     <CardDescription>
