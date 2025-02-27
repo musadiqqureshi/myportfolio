@@ -1,0 +1,41 @@
+i want you to create a website for me that would be my personal portfolio I am a software enigneer and i want it for my clients to engage with me so make a proffesional website for me here is my proffesional data also you need to search and add top 10 trending projects from github to discuss them as my own project
+
+Muhammad Mussaddiq Ahmed Qureshi
+55 Nawab Town Main Boulevard, Lahore, Punjab • 03086994758 • muzzammilkhan7890@gmail.com
+Python developer
+To join a dynamic and progressive organization offering better opportunities for diversified experience, and seeking a position which will allow for continued professional growth, offering an environment in which advancement is based on strength of individual contributions to the realization of organizational goals. Structured Python Developer bringing about 2 years of comprehensive experience developing back-end components, connecting applications with other web services and supporting front-end developers, Tech-savvy and methodical professional possessing strong understanding of front-end technologies. Familiar with server-side template languages.
+WORK EXPERIENCE
+Tech Soultions • Lahore • Part-time • 12/2022 - Present
+Python Developer
+SKILLS
+Programming Languages: C and C++, HTML, Java, Python
+DataBase Management System: MongoDB, MySQL
+Web Development: BOOTSTRAP, CSS, HTML, PHP, SQL, XML
+IDEs: ANDROID STUDIO, DEV C++, JUPYTER NOTEBOOK, NETBEANS, PYCHARM, REPLIT, VISUAL STUDIO Machine Learning: Neural Network, Object Classification
+EDUCATION
+Bachelors in Computer Science Virtual Unoversity • Lahore • 11/2023 - 11/2027
+PROJECTS
+Python Development
+Freelance
+• Developed a Cinema Booking System featuring intuitive booking interfaces, ensuring a seamless reservation process for users.
+• Developed Hospital Management System Featuring Doctor Appointements,engaging user interface,patients managements
+• Developed Air ticketing system featurening customers handling,Tickets booking management.
+Web Developement
+Freelance
+• Developed a robust Hospital Management System aimed at revolutionizing healthcare administration
+
+processes.
+• Integrated seamless patient record management, appointment scheduling, and inventory tracking functionalities to streamline operations.
+• Designed to enhance the overall efficiency of hospital management by providing a comprehensive solution for various administrative tasks.
+Database Management System
+• Engineered a comprehensive Database Management System (DBMS) to efficiently organize, retrieve, and manipulate data.
+• Tailored features to meet diverse organizational needs, ensuring seamless data handling across multiple platforms.
+• Empowers businesses to make informed decisions and drive growth by providing a robust platform for managing data effectively.
+AI Fraud Detection System
+• Developed an advanced AI Fraud Detection System to protect businesses from fraudulent activities with exceptional accuracy and efficiency.
+• Utilized cutting-edge artificial intelligence algorithms to analyze large volumes of transactional data in real-time.
+• Swiftly identifies suspicious patterns and anomalies, mitigating financial risks and safeguarding assets effectively.
+Restaurant Management system
+• Created a comprehensive Restaurant Management System aimed at streamlining operations and improving customer experiences in the food service industry.
+• Integrated intuitive features including table reservations, order management, inventory tracking, and staff scheduling to empower restaurant owners.
+• Enables efficient management of establishments while ensuring exceptional service delivery to patrons.
